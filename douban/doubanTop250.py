@@ -17,9 +17,6 @@ def get_content(url,headers):
     scores = soup.select('ol.grid_view > li > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > span:nth-of-type(2)')
     pics = soup.select('ol.grid_view > li > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1) > img:nth-of-type(1)')
     
-   
-   
-    
     data = []
     piclist = []
     
@@ -30,8 +27,6 @@ def get_content(url,headers):
             'score':score.get_text(),
             }
         data.append(dic)
-    
-    
     
     for pic in pics:
         piclist.append(pic.get('src'))
