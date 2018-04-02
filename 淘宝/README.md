@@ -1,0 +1,1 @@
+使用chrome和selenium爬去淘宝美食目录下的商品信息，并保存到mongodb。
